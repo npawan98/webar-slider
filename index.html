@@ -96,9 +96,9 @@
                         }
                     });
 
-                    setTimeout(() => {
-                        done();
-                    }, 500);
+                    // setTimeout(() => {
+                    //     done();
+                    // }, 500);
                 }
                 // portfolio.setAttribute("position", "0 " + y + " -0.01");
             }, 10);
@@ -121,15 +121,16 @@
             init: function () {
                 this.el.addEventListener('targetFound', event => {
                     console.log("target found");
-                    showAvatar(() => {
-                        setTimeout(() => {
-                            showPortfolio(() => {
-                                setTimeout(() => {
-                                    showInfo();
-                                }, 300);
-                            });
-                        }, 300);
-                    });
+                    // showAvatar(() => {
+                    //     setTimeout(() => {
+                    //         showPortfolio(() => {
+                    //             setTimeout(() => {
+                    //                 showInfo();
+                    //             }, 300);
+                    //         });
+                    //     }, 300);
+                    // });
+                    showPortfolio();
                 });
                 this.el.addEventListener('targetLost', event => {
                     console.log("target found");
